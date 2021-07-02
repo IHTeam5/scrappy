@@ -1,11 +1,11 @@
 import React from 'react'
-import { mapping, light as lightTheme } from '@eva-design/eva'
-import { ApplicationProvider } from 'react-native-ui-kitten'
+import { View, Text } from "react-native";
+import { NavigationContainer } from '@react-navigation/native';
 import TabNavigator from './navigation/TabNavigator'
 
 const App = () => (
-  <ApplicationProvider mapping={mapping} theme={lightTheme}>
+  <NavigationContainer>
     <TabNavigator />
-  </ApplicationProvider>
+  </NavigationContainer>
 )
 export default App
